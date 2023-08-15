@@ -1,0 +1,148 @@
+/* Write your CSS here */
+
+@import 'https://fonts.googleapis.com/css?family=Roboto';
+
+.app-div {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto';
+}
+.top-section {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  align-items: center;
+  padding-bottom: 20px;
+  border: 2px #cbd2d9 solid;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+.main-div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 300px;
+  justify-content: space-between;
+  border-radius: 10px;
+  width: 35%;
+}
+.user {
+  width: 100%;
+  height: 35px;
+  font-size: 18px;
+  padding-left: 10px;
+  color: #1e293b;
+  font-weight: 550;
+}
+.comment {
+  font-size: 18px;
+  padding-left: 10px;
+  padding-top: 5px;
+  color: #1e293b;
+  font-weight: 550;
+  width: 100%;
+  height: 130px;
+}
+.heading {
+  font-size: 55px;
+  color: #1e293b;
+  align-self: flex-start;
+}
+.instruction {
+  font-size: 18px;
+  color: #475569;
+  font-weight: 500;
+}
+.btn {
+  font-size: 18px;
+  padding: 10px;
+  background-color: #0284c7;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+.img-div {
+  align-self: center;
+}
+.bottom-section {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+.comment-head {
+  display: flex;
+  align-items: center;
+}
+.no-of-comments {
+  background-color: #0284c7;
+  color: #ffffff;
+  padding: 5px;
+  font-size: 18px;
+  border-radius: 5px;
+  width: 30px;
+  text-align: center;
+}
+.cm-heading {
+  margin-left: 10px;
+  font-size: 20px;
+  color: #334155;
+  font-weight: 500;
+}
+.comments-section {
+  padding-left: 0px;
+}
+.main-img {
+  min-height: 200px;
+  min-width: 300px;
+}
+
+@media screen and (max-width: 576px) {
+  .app-div {
+    align-items: center;
+  }
+  .main-div {
+    flex-direction: column;
+  }
+  .top-section {
+    width: 90%;
+  }
+  .bottom-section {
+    width: 90%;
+  }
+  .form {
+    width: 100%;
+    margin-top: 20px;
+    height: 330px;
+  }
+  .img-div {
+    order: 1;
+  }
+  .form {
+    order: 2;
+  }
+  .main-img {
+    height: 200px;
+    width: 300px;
+  }
+  .heading {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 578px) {
+  .main-img {
+    height: 150px;
+    width: 250px;
+  }
+}
